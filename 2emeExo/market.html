@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <title>Ma première app VueJS</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- Nom du restaurant défini dans le data store -->
+        <h1>{{ restaurantName }}</h1>
+
+        <h2>Panier d'achat(s):</h2>
+        <!-- Liste des produits -->
+        <ul>
+            <li>Pommes: {{ costOfApples }}€</li>
+            <li>Bananes: {{ costOfBananas }}€</li>
+            <li>Noix de coco: {{ costOfCoconuts}}€</li>
+        </ul>
+
+        <!-- Prix total -->
+        <h2>Total: {{ totalPrice }} </h2>
+
+        <!-- Numéro de téléphone -->
+        <h3>{{ phoneNumbers }}</h3>
+        <!-- Mail -->
+        <h3>{{ mail }}</h3>
+        <!-- Adresse -->
+        <h3>{{ address }}</h3>
+
+        <!-- Footer et copyright défini dans le computed properties -->
+
+        <footer>{{ footerHtml }}<br>
+            {{ copyright }}
+        </footer>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
